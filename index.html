@@ -74,7 +74,7 @@
     gap: 2rem;
   }
   
-  #containerPrincipal{
+  #containerPrincipal {
     display: flex;
     align-items: center;
     gap: 8rem;
@@ -88,16 +88,31 @@
   .titulo2{
    font-weight: 700;
   }
-  
-  .preco{
-    font-weight: 700;
+  .descricaoDetalhada{
+    color: rgb(120, 116, 116);
   }
-
+  
+  #geral{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
   .desconto{
-    background-color: rgb(224, 197, 170);
-    border-radius: 5px;
+    background-color: rgba(255, 179, 0, 0.234);
+    border-radius:  4px;
+    padding: 1.5px 7px; 
+    color: orange;
+   }
+  .precoAntigo{
+    color: rgb(198, 196, 196);
     
   }
+ #buttons{
+  display: flex;
+ }
+ #cart{
+  color: orange;
+ }
 </style>
 <body>
   <div class="header">
@@ -140,19 +155,30 @@
           the weather can offer.
         </p>
       </div>
-    
+   
+   
       <br>
      <div class="precosProdutos" id="geral">
       <div class="preco">
-        <h1>$125.00</h1>
+        <h1><b>$125.00</b></h1>
       </div>
       <div class="desconto">
-        <p>50%</p>
+        <p> <b>50%</b> </p>
       </div>
-      <div class="precoAntigo">
-        <p>$125.00</p>
-      </div>
-     </div>
     </div>
+    
+      <div class="precoAntigo">
+        <p><s>$250.00</s></p>
+        <div class="botoes" id="buttons">
+          <button type="button" class="btn btn-secondary">button</button>
+        
+        <div class="addcarrinho" id="carrinhos">
+          <button type="button" class="btn btn-secondary btn-lg btn-block"> <img src="images/icon-cart.svg" alt="" id="cart"> Add to cart</button>
+        </div>
+      </div>
+      </div>
+     
+    </div>
+  </div>
 </body>
 </html>
