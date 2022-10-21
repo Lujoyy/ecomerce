@@ -73,6 +73,31 @@
     display: flex;
     gap: 2rem;
   }
+  
+  #containerPrincipal{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+  
+  .titulo1 {
+   color : orange;
+   font-weight: 700;
+   font-size: 11.5px;
+  }
+  .titulo2{
+   font-weight: 700;
+  }
+  
+  .preco{
+    font-weight: 700;
+  }
+
+  .desconto{
+    background-color: rgb(224, 197, 170);
+    border-radius: 5px;
+    
+  }
 </style>
 <body>
   <div class="header">
@@ -91,7 +116,7 @@
       </div>
     </header>
   </div>
-  <div class="container mt-5">
+  <div class="container mt-5" id="containerPrincipal">
     <div class="imagesneakers">
       <img src="images/image-product-1.jpg" alt="" id="imageMain">
       <div class="groupimages">
@@ -102,8 +127,32 @@
       </div>
     </div>
     <div class="descriptionProduct">
-
+      <div class="titulo1">
+        <p>SNEAKER COMPANY</p><br>
+      </div>
+      <div class="titulo2">
+        <h1><b>Fall Limited Edition <br>Sneakers</b></h1>
+      </div>
+      <br>
+      <div class="descricaoDetalhada">
+        <p>These low-profile sneakers are your perfect casual wear<br> companion.
+          Featuring a durable rubber outer sole, they´ll <br> whithstand everything
+          the weather can offer.
+        </p>
+      </div>
+    
+      <br>
+     <div class="precosProdutos" id="geral">
+      <div class="preco">
+        <h1>$125.00</h1>
+      </div>
+      <div class="desconto">
+        <p>50%</p>
+      </div>
+      <div class="precoAntigo">
+        <p>$125.00</p>
+      </div>
+     </div>
     </div>
-  </div>
 </body>
 </html>
